@@ -35,10 +35,7 @@ flowchart TD
 ```
 
 
-
-
 ## 二、如何使用
-
 
 ### 安装
 
@@ -81,3 +78,174 @@ openspec/
 
 ### 实践
 
+```bash
+YOU : /opsx:propose 开发一个学生模型的crud功能
+
+AI: # Check existing demo files  
+    # Check existing demo files  
+    Thinking: All the CRUD functionality has already been created: 
+     添加高级查询？
+YOU ：是
+AI:
+                                                                                                          
+  ┃  Thinking: The user wants to add advanced queries like:                                              
+  ┃  - Query by age range                                                                                
+  ┃  - Pagination query                                                                                  
+  ┃                                                                                                      
+  ┃  Let me create the change proposal for adding advanced query features.   
+  
+   # Create new change for advanced query                                                              
+  ┃                                                                                                      
+  ┃  $ openspec new change "student-advanced-query"                                                      
+  ┃  - Creating change 'student-advanced-query'...                                                       
+  ┃  ✔ Created change 'student-advanced-query' at openspec/changes/student-advanced-query/ (schema:      
+  ┃  spec-driven)                                                                                        
+  ┃                            
+
+                                                                                                       
+  ┃  Thinking: Now I have enough context to create the proposal. Let me write it.                        
+                                                                                                         
+  ┃                                                                                                      
+  ┃  # Todos                                                                                             
+  ┃                                                                                                      
+  ┃  [•] Create proposal.md                                                                              
+  ┃  [ ] Create design.md                                                                                
+  ┃  [ ] Create specs                                                                                    
+  ┃  [ ] Create tasks.md  
+                 
+  ┃  Thinking: Now let me get instructions for tasks.     Thinking: Now let me create the proposal.md file.  
+  ...
+ 
+  ┃  Thinking: Now let me get instructions for the design artifact. 
+  ...
+  
+  ┃  Thinking: Now I need to create the design.md file based on the proposal and the existing codebase. 
+  ...
+  
+  ┃  Thinking: Now let me check the status and create the specs. 
+  ...
+  
+  ┃  Thinking: Now let me get instructions for tasks.   
+    
+                                                                                                                   
+                                                                                                                     
+  ┃  Thinking: All artifacts are created. Let me provide the summary.                                                
+                                                                                                                  ▄  
+     Change 创建完成                                                                                                 
+                                                                                                                     
+     Change 名称: student-advanced-query                                                                             
+     位置: openspec/changes/student-advanced-query/                                                                  
+                                                                                                                     
+     创建的 Artifacts     
+     
+     ┌─────────────────────┬─────────────────────────────────────────────────────────────┬────────────────────────┐                                              
+     │Artifact             │路径                                                          │描述                    │                                              
+     ├─────────────────────┼─────────────────────────────────────────────────────────────┼────────────────────────┤                                              
+     │proposal.md          │openspec/changes/student-advanced-query/proposal.md          │需求提案文档            │                                              
+     ├─────────────────────┼─────────────────────────────────────────────────────────────┼────────────────────────┤                                              
+     │design.md            │openspec/changes/student-advanced-query/design.md            │技术设计文档            │                                              
+     ├─────────────────────┼─────────────────────────────────────────────────────────────┼────────────────────────┤                                              
+     │specs                │specs/*/spec.md                                              │4个详细规格文档         │                                              
+     ├─────────────────────┼─────────────────────────────────────────────────────────────┼────────────────────────┤                                              
+     │tasks.md             │openspec/changes/student-advanced-query/tasks.md             │实现任务清单            │                                              
+     └─────────────────────┴─────────────────────────────────────────────────────────────┴────────────────────────┘                                              
+                                                                                                                                                                 
+      规格文档                                                                                                                                                    
+                                                                                                                                                                 
+     - student-age-range-query/spec.md - 按年龄范围查询                                                                                                          
+     - student-pagination-query/spec.md - 分页查询                                                                                                               
+     - student-count/spec.md - 统计数量                                                                                                                          
+     - student-multi-condition-query/spec.md - 多条件组合查询    
+     
+      任务清单预览                                                                                                                                                                                                                                                                                                    
+     - Mapper 接口扩展 (4项)                                                                                                                                     
+     - XML 映射配置 (4项)                                                                                                                                        
+     - 测试用例 (4项)                                                                                                                                            
+     - 验证 (2项)                                                                                                                                                
+                                               
+YOU: opsx:apply student-advanced-query
+ 
+AI: Run /opsx:apply to start implementing.   
+
+     Implementing: student-advanced-query (schema: spec-driven)                                                          • grep_app Connected                    
+                                                                                                                         • websearch Connected                   
+     Progress: 0/14 tasks complete                                                                                                                               
+                                                                                                                         LSP                                     
+     Working on task 1.1: 添加 selectByAgeRange 方法    
+     
+     .... 
+     
+                                                                                                                           116,951 tokens                          
+  ┃  Thinking: All artifacts are complete. Now let me provide a summary.                                                 58% used                                
+                                                                                                                         $0.00 spent                             
+     Implementation Complete                                                                                                                                     
+                                                                                                                         ▼ MCP                                   
+     Change: student-advanced-query                                                                                      • context7 Connected                    
+     Schema: spec-driven                                                                                                 • gitnexus MCP error -32000:            
+     Progress: 14/14 tasks complete ✓                                                                                      Connection closed                     
+                                                                                                                         • grep_app Connected                    
+     Completed This Session                                                                                              • websearch Connected                   
+     - [x] 1.1 selectByAgeRange 方法                                                                                                                             
+     - [x] 1.2 selectPage 分页查询方法                                                                                   LSP                                     
+     - [x] 1.3 countAll 统计方法                                                                                         LSPs will activate as files are read    
+     - [x] 1.4 selectByConditions 多条件查询方法                                                                                                                 
+     - [x] 2.1-2.4 XML 映射配置                                                                                          ▶ Modified Files                        
+     - [x] 3.1-3.4 测试用例                                                                                                                                      
+     - [x] 4.1-4.2 验证通过                                                                                                                                      
+                                                                                                                                                                 
+     新增功能                                                                                                                                                    
+                                                                                                                                                                 
+     ┌───────────────────────────────────────────────────────────────┬────────────────────────────────────────────┐                                              
+     │方法                                                           │说明                                        │                                              
+     ├───────────────────────────────────────────────────────────────┼────────────────────────────────────────────┤                                              
+     │selectByAgeRange(minAge, maxAge)                               │按年龄范围查询                              │                                              
+     ├───────────────────────────────────────────────────────────────┼────────────────────────────────────────────┤                                              
+     │selectPage(offset, limit)                                      │分页查询                                    │                                              
+     ├───────────────────────────────────────────────────────────────┼────────────────────────────────────────────┤                                              
+     │countAll()                                                     │统计学生总数                                │                                              
+     ├───────────────────────────────────────────────────────────────┼────────────────────────────────────────────┤                                              
+     │selectByConditions(Map)                                        │多条件组合查询                              │                                              
+     └───────────────────────────────────────────────────────────────┴────────────────────────────────────────────┘                                              
+                                                  
+      代码变更                                                                                                                                                    
+                                                                                                                                                                 
+     - StudentMapper.java - 新增4个方法                                                                                                                          
+     - StudentMapper.xml - 新增4个SQL映射                                                                                                                        
+     - StudentTest.java - 新增4个测试方法                                                                                                                        
+                                                                                                                                                                 
+     编译验证通过 ✓   
+     
+     
+YOU: /opsx:archive
+
+AI: 
+
+                                                                                                                                                              
+  ┃  # Verify archive                                                                                                                                            
+  ┃                                                                                                                                                              
+  ┃  $ ls openspec/changes/archive/                                                                                                                              
+  ┃                                                                                                                                                              
+  ┃  2026-03-15-student-advanced-query                                                                                                                           
+  ┃                                                                                                                                                              
+                                                                                                                                                                 
+  ┃  Thinking: Archive successful!                                                                                                                               
+                                                                                                                                                                 
+     Archive Complete                                                                                                                                            
+                                                                                                                                                                 
+     Change: student-advanced-query                                                                                                                              
+     Schema: spec-driven                                                                                                                                         
+     Archived to: openspec/changes/archive/2026-03-15-student-advanced-query/                                                                                    
+     Specs: No delta specs (main spec directory doesn't exist)                                                                                                   
+                                                                                                                                                                 
+     All artifacts complete. All tasks complete.         
+```
+
+
+#### openspec的目录变化
+
+##### 1.完成前
+
+![完成前](pic/spec_2.png)
+#### 2.完成后
+
+![完成后](pic/spec_3.png)
