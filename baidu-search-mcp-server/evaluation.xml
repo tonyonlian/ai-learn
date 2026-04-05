@@ -1,0 +1,42 @@
+<evaluation>
+  <qa_pair>
+    <question>Find information about ChatGPT and its launch date. What specific date was ChatGPT originally released according to Baidu's search results and knowledge graph?</question>
+    <answer>2022年11月30日</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Search for "人工智能技术发展" and find results about AI technology development. How many organic results are returned in the first page with default limit (20 results)?</question>
+    <answer>20</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Find information about "机器学习算法" (machine learning algorithms) using Baidu search. What is the title of the first organic result returned?</question>
+    <answer>机器学习算法</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Search for "AI 技术趋势" and retrieve results in JSON format. What is the value of the "total" field in the structured output (total number of results found)?</question>
+    <answer>0</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Find information about "深度学习框架" (deep learning frameworks) and check if any knowledge graph information is available. What type of source is typically shown for knowledge graph entries in Baidu search?</question>
+    <answer>百度百科</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Search for "云计算平台" (cloud computing platforms) and find blog posts. What information field is typically included in blog search results along with title and snippet?</question>
+    <answer>reads</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Find top searches related to "人工智能" (artificial intelligence) by searching for this term. What type of additional information does Baidu provide along with organic search results that shows trending queries?</question>
+    <answer>top_searches</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Search for "数字化转型" (digital transformation) and retrieve the first 10 results. Then search with an offset of 10 to get the next page. What is the offset value used to request the second page of results?</question>
+    <answer>10</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Search for "电商网站" (e-commerce websites) and check if there are any shopping results included. What field name in the API response contains inline shopping data when available?</question>
+    <answer>inline_shopping</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Find information about "文心一言" (ERNIE Bot) and identify what type of answer box Baidu returns for queries about Chinese AI models. What is the type value in the answer_box structure for AI-generated content?</question>
+    <answer>ai_content</answer>
+  </qa_pair>
+</evaluation>
